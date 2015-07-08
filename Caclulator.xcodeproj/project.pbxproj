@@ -13,6 +13,7 @@
 		8F9656CD1B40696800755188 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9656CC1B40696800755188 /* Images.xcassets */; };
 		8F9656D01B40696800755188 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F9656CE1B40696800755188 /* LaunchScreen.xib */; };
 		8F9656DC1B40696800755188 /* CaclulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9656DB1B40696800755188 /* CaclulatorTests.swift */; };
+		8FF923601B4DB55D0098AE33 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF9235F1B4DB55D0098AE33 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8F9656D51B40696800755188 /* CaclulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaclulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9656DA1B40696800755188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F9656DB1B40696800755188 /* CaclulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaclulatorTests.swift; sourceTree = "<group>"; };
+		8FF9235F1B4DB55D0098AE33 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalculatorBrain.swift; path = Caclulator/CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		8F9656B71B40696800755188 = {
 			isa = PBXGroup;
 			children = (
+				8FF9235F1B4DB55D0098AE33 /* CalculatorBrain.swift */,
 				8F9656C21B40696800755188 /* Caclulator */,
 				8F9656D81B40696800755188 /* CaclulatorTests */,
 				8F9656C11B40696800755188 /* Products */,
@@ -77,11 +80,8 @@
 		8F9656C21B40696800755188 /* Caclulator */ = {
 			isa = PBXGroup;
 			children = (
-				8F9656C51B40696800755188 /* AppDelegate.swift */,
 				8F9656C71B40696800755188 /* ViewController.swift */,
 				8F9656C91B40696800755188 /* Main.storyboard */,
-				8F9656CC1B40696800755188 /* Images.xcassets */,
-				8F9656CE1B40696800755188 /* LaunchScreen.xib */,
 				8F9656C31B40696800755188 /* Supporting Files */,
 			);
 			path = Caclulator;
@@ -90,6 +90,9 @@
 		8F9656C31B40696800755188 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F9656CE1B40696800755188 /* LaunchScreen.xib */,
+				8F9656CC1B40696800755188 /* Images.xcassets */,
+				8F9656C51B40696800755188 /* AppDelegate.swift */,
 				8F9656C41B40696800755188 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					8F9656BF1B40696800755188 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = KEV2F28PDG;
 					};
 					8F9656D41B40696800755188 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF923601B4DB55D0098AE33 /* CalculatorBrain.swift in Sources */,
 				8F9656C81B40696800755188 /* ViewController.swift in Sources */,
 				8F9656C61B40696800755188 /* AppDelegate.swift in Sources */,
 			);
@@ -342,9 +347,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Caclulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +360,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Caclulator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +422,7 @@
 				8F9656E11B40696800755188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F9656E21B40696800755188 /* Build configuration list for PBXNativeTarget "CaclulatorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +431,7 @@
 				8F9656E41B40696800755188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
